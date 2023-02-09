@@ -6,7 +6,7 @@ package Interface;
 
 /**
  *
- * @author Admin
+ * @author Admi
  */
 public class Connect
 {
