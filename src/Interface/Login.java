@@ -12,8 +12,7 @@ public class Login extends javax.swing.JFrame {
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents()
-    {
+    private void initComponents() {
 
         bg = new javax.swing.JPanel();
         logo = new javax.swing.JLabel();
@@ -42,24 +41,20 @@ public class Login extends javax.swing.JFrame {
 
         logo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/PanaderiaP (1).png"))); // NOI18N
-        bg.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 0, 390, 240));
+        bg.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 50, 520, 310));
 
         citybg.setBackground(new java.awt.Color(0, 134, 190));
-        citybg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/city.png"))); // NOI18N
-        bg.add(citybg, new org.netbeans.lib.awtextra.AbsoluteConstraints(548, 0, -1, 500));
+        citybg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/PanPan_corregido.jpg"))); // NOI18N
+        bg.add(citybg, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, -20, 570, 520));
 
         header.setBackground(new java.awt.Color(255, 255, 255));
-        header.addMouseMotionListener(new java.awt.event.MouseMotionAdapter()
-        {
-            public void mouseDragged(java.awt.event.MouseEvent evt)
-            {
+        header.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
                 headerMouseDragged(evt);
             }
         });
-        header.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mousePressed(java.awt.event.MouseEvent evt)
-            {
+        header.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
                 headerMousePressed(evt);
             }
         });
@@ -71,18 +66,14 @@ public class Login extends javax.swing.JFrame {
         exitTxt.setText("X");
         exitTxt.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         exitTxt.setPreferredSize(new java.awt.Dimension(40, 40));
-        exitTxt.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mouseClicked(java.awt.event.MouseEvent evt)
-            {
+        exitTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
                 exitTxtMouseClicked(evt);
             }
-            public void mouseEntered(java.awt.event.MouseEvent evt)
-            {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
                 exitTxtMouseEntered(evt);
             }
-            public void mouseExited(java.awt.event.MouseEvent evt)
-            {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
                 exitTxtMouseExited(evt);
             }
         });
@@ -130,10 +121,8 @@ public class Login extends javax.swing.JFrame {
         userTxt.setForeground(new java.awt.Color(204, 204, 204));
         userTxt.setText("Ingrese su nombre de usuario");
         userTxt.setBorder(null);
-        userTxt.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mousePressed(java.awt.event.MouseEvent evt)
-            {
+        userTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
                 userTxtMousePressed(evt);
             }
         });
@@ -149,10 +138,8 @@ public class Login extends javax.swing.JFrame {
         passTxt.setForeground(new java.awt.Color(204, 204, 204));
         passTxt.setText("********");
         passTxt.setBorder(null);
-        passTxt.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mousePressed(java.awt.event.MouseEvent evt)
-            {
+        passTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
                 passTxtMousePressed(evt);
             }
         });
@@ -168,18 +155,14 @@ public class Login extends javax.swing.JFrame {
         loginBtnTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         loginBtnTxt.setText("ENTRAR");
         loginBtnTxt.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        loginBtnTxt.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mouseClicked(java.awt.event.MouseEvent evt)
-            {
+        loginBtnTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
                 loginBtnTxtMouseClicked(evt);
             }
-            public void mouseEntered(java.awt.event.MouseEvent evt)
-            {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
                 loginBtnTxtMouseEntered(evt);
             }
-            public void mouseExited(java.awt.event.MouseEvent evt)
-            {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
                 loginBtnTxtMouseExited(evt);
             }
         });
