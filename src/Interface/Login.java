@@ -254,6 +254,7 @@ public class Login extends javax.swing.JFrame {
 
     private void loginBtnTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginBtnTxtMouseExited
         loginBtn.setBackground(new Color(0,134,190));
+        
     }//GEN-LAST:event_loginBtnTxtMouseExited
 
     private void userTxtMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_userTxtMousePressed
@@ -280,6 +281,9 @@ public class Login extends javax.swing.JFrame {
 
     private void loginBtnTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginBtnTxtMouseClicked
         javax.swing.JOptionPane.showMessageDialog(this, "Intento de login con los datos:\nUsuario: " + userTxt.getText() + "\nContraseña: " + String.valueOf(passTxt.getPassword()), "LOGIN", javax.swing.JOptionPane.INFORMATION_MESSAGE);
+        Principal PM =new Principal();
+        PM.setVisible(true);
+        dispose();
     }//GEN-LAST:event_loginBtnTxtMouseClicked
 
     private void userTxtActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_userTxtActionPerformed

@@ -102,7 +102,7 @@ public class Principal extends javax.swing.JFrame
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 470));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/fondo interfas correguido.png"))); // NOI18N
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 0, 170, 470));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 0, 170, 500));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
