@@ -4,6 +4,8 @@
  */
 package Interface;
 
+import java.awt.Color;
+
 /**
  *
  * @author Admin
@@ -30,79 +32,145 @@ public class Principal extends javax.swing.JFrame
     {
 
         jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
+        title = new javax.swing.JLabel();
+        jSeparator2 = new javax.swing.JSeparator();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        txtUbicacion = new javax.swing.JTextField();
+        lupawhite = new javax.swing.JLabel();
+        ubicacion = new javax.swing.JLabel();
+        txtIniciar = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1120, 500));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel3.setBackground(new java.awt.Color(112, 110, 110));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setBackground(new java.awt.Color(227, 125, 0));
-        jButton1.setFont(new java.awt.Font("Pristina", 2, 36)); // NOI18N
-        jButton1.setText("Proveedores");
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jButton1.addActionListener(new java.awt.event.ActionListener()
+        title.setFont(new java.awt.Font("Roboto Black", 1, 24)); // NOI18N
+        title.setForeground(new java.awt.Color(255, 255, 255));
+        title.setText("LA TORRE");
+        title.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel3.add(title, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
+
+        jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel3.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 120, 10));
+
+        jLabel5.setFont(new java.awt.Font("Roboto Light", 1, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("SUCURSALES");
+        jLabel5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 20, -1, -1));
+
+        jLabel6.setFont(new java.awt.Font("Roboto Light", 1, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("PRODUCTOS");
+        jLabel6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 20, -1, -1));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Downloads\\Lupa_Black (1).png")); // NOI18N
+        jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR));
+        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 40, -1, -1));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Downloads\\Canasta Pan (2).png")); // NOI18N
+        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 30, -1, -1));
+
+        txtUbicacion.setBackground(new java.awt.Color(230, 230, 230));
+        txtUbicacion.setForeground(new java.awt.Color(120, 120, 120));
+        txtUbicacion.setText("¿A dónde llevamos tu pedido?");
+        txtUbicacion.setBorder(null);
+        txtUbicacion.addMouseListener(new java.awt.event.MouseAdapter()
         {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
+            public void mouseClicked(java.awt.event.MouseEvent evt)
             {
-                jButton1ActionPerformed(evt);
+                txtUbicacionMouseClicked(evt);
             }
         });
+        jPanel3.add(txtUbicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 50, 250, 30));
 
-        jButton2.setBackground(new java.awt.Color(227, 125, 0));
-        jButton2.setFont(new java.awt.Font("Pristina", 2, 36)); // NOI18N
-        jButton2.setText("Ventas");
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lupawhite.setBackground(new java.awt.Color(230, 230, 230));
+        lupawhite.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lupawhite.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Downloads\\Lupa-gris (1).png")); // NOI18N
+        lupawhite.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        lupawhite.setOpaque(true);
+        jPanel3.add(lupawhite, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 50, 30, 30));
 
-        jButton3.setBackground(new java.awt.Color(227, 125, 0));
-        jButton3.setFont(new java.awt.Font("Pristina", 2, 36)); // NOI18N
-        jButton3.setText("Producto");
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        ubicacion.setBackground(new java.awt.Color(230, 230, 230));
+        ubicacion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ubicacion.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Downloads\\icone-de-localisation-grise (1).png")); // NOI18N
+        ubicacion.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        ubicacion.setOpaque(true);
+        jPanel3.add(ubicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 50, 30, 30));
 
-        jButton4.setBackground(new java.awt.Color(227, 125, 0));
-        jButton4.setFont(new java.awt.Font("Pristina", 2, 36)); // NOI18N
-        jButton4.setText("Altas y Bajas");
-        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        txtIniciar.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        txtIniciar.setForeground(new java.awt.Color(255, 255, 255));
+        txtIniciar.setText("INICIAR SESIÓN");
+        txtIniciar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        txtIniciar.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
+                txtIniciarMouseClicked(evt);
+            }
+        });
+        jPanel3.add(txtIniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 20, -1, 40));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Downloads\\user_white (1).png")); // NOI18N
+        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 30, -1, -1));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Downloads\\tiendita.png")); // NOI18N
+        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 60, -1, -1));
+
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 940, 90));
+
+        jPanel2.setBackground(new java.awt.Color(0, 0, 0));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 940, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
-                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(126, Short.MAX_VALUE))
+            .addGap(0, 160, Short.MAX_VALUE)
         );
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 470));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 940, 160));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/images/fondo interfas correguido.png"))); // NOI18N
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 0, 170, 500));
+        jLabel2.setFont(new java.awt.Font("Roboto", 1, 24)); // NOI18N
+        jLabel2.setText("SUGERENCIAS");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 260, -1, -1));
+
+        jSeparator1.setBackground(new java.awt.Color(201, 77, 7));
+        jSeparator1.setForeground(new java.awt.Color(201, 77, 7));
+        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 290, 60, -1));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Downloads\\icon_Facebook (1).png")); // NOI18N
+        jLabel7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 250, -1, -1));
+
+        jLabel9.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Downloads\\icon_WhatsApp (1).png")); // NOI18N
+        jLabel9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 310, -1, -1));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Downloads\\icon_Instagram (1).png")); // NOI18N
+        jLabel10.setToolTipText("");
+        jLabel10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 370, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -112,16 +180,27 @@ public class Principal extends javax.swing.JFrame
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 565, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
-    {//GEN-HEADEREND:event_jButton1ActionPerformed
+    private void txtIniciarMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_txtIniciarMouseClicked
+    {//GEN-HEADEREND:event_txtIniciarMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        Login LO =new Login();
+        LO.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_txtIniciarMouseClicked
+
+    private void txtUbicacionMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_txtUbicacionMouseClicked
+    {//GEN-HEADEREND:event_txtUbicacionMouseClicked
+        if (txtUbicacion.getText ().equals ("¿A dónde llevamos tu pedido?"))
+        {
+            txtUbicacion.setText ("");
+            txtUbicacion.setForeground (Color.black);    } 
+    }//GEN-LAST:event_txtUbicacionMouseClicked
 
     /**
      * @param args the command line arguments
@@ -157,6 +236,7 @@ public class Principal extends javax.swing.JFrame
             java.util.logging.Logger.getLogger (Principal.class.getName ()).log (java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater (new Runnable ()
@@ -169,12 +249,25 @@ public class Principal extends javax.swing.JFrame
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JLabel lupawhite;
+    private javax.swing.JLabel title;
+    private javax.swing.JLabel txtIniciar;
+    private javax.swing.JTextField txtUbicacion;
+    private javax.swing.JLabel ubicacion;
     // End of variables declaration//GEN-END:variables
 }
